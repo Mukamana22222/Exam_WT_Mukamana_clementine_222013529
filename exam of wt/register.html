@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- JavaScript validation and content load for registration data-->
+        <script>
+            function confirmInsert() {
+                return confirm('Are you sure you want to registration?');
+            }
+        </script>
+</head>
+
+<body bgcolor="pink">
+    <center>
+    <h5> REGISTER INFORMATION</h5>
+<form action="register.php" method="POST"  onsubmit="return confirmInsert();" style="background-color: WHITE; align-items: center; width: 330px; height: 520px;"> <br><br>
+        <label>FirstName:</label>
+        <input type="text" name="fname" placeholder="enter your firstname"required><br><br>
+
+        <label>LastName:</label>
+        <input type="text" name="lname" placeholder="enter your lastname" required><br><br>
+
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="enter your username" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+       
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="enter your email" required><br><br>
+
+        <label>Telephone:</label>
+        <input type="text" name="telephone" placeholder="enter your telephone" required><br><br><br>
+        <label>Dob:</label>
+        <input type="date" name="DoB" placeholder="DoB" required><br><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="enter your password" required><br><br>
+
+        <label>Activation_code:</label>
+        <input type="text" name="activation_code" placeholder="enter activation_code"required><br><br>
+
+        <input type="submit" name="register" value="Register">
+        <input type="reset" name="cancel" value="Cancel">
+        <br><br>
+         if you have an account please click here<a href="login.html"> Login </a>
+    </form>
+</center>
+</body>
+
+</html>
